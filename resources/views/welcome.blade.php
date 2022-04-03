@@ -77,61 +77,20 @@
                 </div>
             </div>
             <div class="row">
+
+                @foreach ($data as $item)
                 <div class="col-md-6 col-sm-6 item equal-height">
                     <div class="single-item wow fadeInUp">
-                        <a target="_blank" href="index-1.html">
-                            <img src="https://validthemes.online/themeforest/digilab/assets//img/demo/index-2.jpg"
-                                alt="Demo">
+                        <a target="_blank" href="{{ $item->url }}">
+                            <img src="{{ asset('images/'. $item->image) }}" alt="{{ $item->slug }}">
                         </a>
                         <div class="info">
-                            <h4>Home Version One</h4>
+                            <h4>{{ $item->name }}</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 item equal-height">
-                    <div class="single-item wow fadeInUp">
-                        <a target="_blank" href="index-2.html">
-                            <img src="https://validthemes.online/themeforest/digilab/assets//img/demo/index-1.jpg"
-                                alt="Demo">
-                        </a>
-                        <div class="info">
-                            <h4>Home Version Two</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 item equal-height">
-                    <div class="single-item wow fadeInUp">
-                        <a target="_blank" href="index-3.html">
-                            <img src="https://validthemes.online/themeforest/digilab/assets//img/demo/index-3.jpg"
-                                alt="Demo">
-                        </a>
-                        <div class="info">
-                            <h4>Home Version Three</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 item equal-height">
-                    <div class="single-item wow fadeInUp">
-                        <a target="_blank" href="index-4.html">
-                            <img src="https://validthemes.online/themeforest/digilab/assets//img/demo/index-4.jpg"
-                                alt="Demo">
-                        </a>
-                        <div class="info">
-                            <h4>Home Version Four</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 item equal-height">
-                    <div class="single-item wow fadeInUp">
-                        <a target="_blank" href="index-5.html">
-                            <img src="https://validthemes.online/themeforest/digilab/assets//img/demo/index-5.jpg"
-                                alt="Demo">
-                        </a>
-                        <div class="info">
-                            <h4>Home Version Five</h4>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
             </div>
         </div>
     </div>

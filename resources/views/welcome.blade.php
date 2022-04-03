@@ -106,8 +106,8 @@
                         <img src="https://validthemes.online/themeforest/digilab/assets//img/logo-light.png" alt="Logo">
                     </div>
                     <div class="copyright">
-                        <p>&copy; Copyright 2020. Digilab Template By <a
-                                href="https://themeforest.net/user/validthemes/portfolio">validthemes</a></p>
+                        <p>&copy; Copyright 2020. Digilab Template By <a href="http://apk-demo.my.id/demo/1">Faisal
+                                Dwiki AMrizal</a></p>
                     </div>
                 </div>
             </div>

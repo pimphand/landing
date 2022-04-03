@@ -101,10 +101,9 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy($product)
     {
-        //delete product image
-        $product->delete();
+        Product::destroy($product);
         return back();
     }
 }

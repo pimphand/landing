@@ -83,8 +83,8 @@
                             </td>
                             <td>{{ $item->description }}</td>
                             <td>
-                                <form action="{{ route('dashboard.destroy', $item->id) }}" method="post"
-                                    class="d-inline">
+                                <form action="{{ route('dashboard.destroy', ['dashboard' => $item->id]) }}"
+                                    method="post" class="d-inline">
                                     @csrf
                                     @method('delete')
                                     <button type="submit" class="btn btn-danger">Delete</button>
